@@ -1,0 +1,90 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    @include transition(all, 400ms);
+
+    @media #{$s1500} {
+        padding: 10px 30px;
+    }
+
+    @media #{$s750} {
+        padding: 10px 15px;
+    }
+
+    &.scrolled{
+        background-color: #F6FAFC;
+    }
+
+    &.faq{
+        &.scrolled{
+            background-color: transparent;
+
+            @media #{$s1023} {
+                background-color: $color4;
+            }
+        }
+    }
+
+    .buttons_holder{
+        .btn{
+            min-width: 11vw;
+
+            @media #{$s1500} {
+                padding: 12px;
+            }
+
+            @media #{$s1100} {
+                min-width: 140px;
+            }
+
+            @media #{$s750} {
+                min-width: initial;
+                padding: 10px 15px;
+            }
+
+            @media #{$s750} {
+                font-size: 14px;
+            }
+
+            &:first-child{
+                margin-right: 15px;
+
+                @media #{$s750} {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+
+    .logo_holder{
+        max-width: 230px;
+
+        @media #{$s750} {
+            max-width: 140px;
+        }
+
+        @media #{$s370} {
+            max-width: 120px;
+        }
+
+        img{
+            width: 100%;
+
+            @media #{$s1500} {
+                width: 70%;
+            }
+
+            @media #{$s750} {
+                width: 100%;
+            }
+        }
+    }
+}
