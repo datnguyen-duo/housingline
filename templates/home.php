@@ -446,7 +446,7 @@ get_header(); ?>
                         <div class="swiper-wrapper">
                             <?php foreach($resources_list as $singleItem): ?>
                                 <div class="swiper-slide">
-                                    <a href="https://www.google.com/" target="_blank" class="single_news">
+                                    <a href="<?php echo $singleItem['resource_link']['url']?>" target="_blank" class="single_news">
                                         <div class="image_holder">
                                             <?php if($singleItem['resource_image']): ?>
                                                 <?php echo wp_get_attachment_image( $singleItem['resource_image']['id'], "full", false ); ?>

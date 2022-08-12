@@ -20,17 +20,16 @@ $linkedin_link = get_field('linkedin_link', 'option');
             <span>
                 Follow Us:
             </span>
-            <?php if($facebook_link): ?>
-                <a href="<?php echo $facebook_link['url'] ?>" target="<?php echo $facebook_link['target'] ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/linkedin.svg">
-                    <?php echo $facebook_link['title'] ?>
-                </a>
-            <?php endif; ?>
-            
             <?php if($linkedin_link): ?>
                 <a href="<?php echo $linkedin_link['url'] ?>" target="<?php echo $linkedin_link['target'] ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/facebook.svg">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/linkedin.svg">
                     <?php echo $linkedin_link['title'] ?>
+                </a>
+            <?php endif; ?>
+            <?php if($facebook_link): ?>
+                <a href="<?php echo $facebook_link['url'] ?>" target="<?php echo $facebook_link['target'] ?>">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/facebook.svg">
+                    <?php echo $facebook_link['title'] ?>
                 </a>
             <?php endif; ?>
         </div>
