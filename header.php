@@ -10,10 +10,14 @@
  */
 $header_first_button = get_field('header_first_button', 'option');
 $header_second_button = get_field('header_second_button', 'option');
+
+$gtm = get_field('gtm_scripts', 'option');
+
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
+	<?php echo $gtm['header_code']; ?>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
@@ -29,6 +33,7 @@ $header_second_button = get_field('header_second_button', 'option');
 </head>
 
 <body <?php body_class(); ?>>
+<?php echo $gtm['body_code']; ?>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 

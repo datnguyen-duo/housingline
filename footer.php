@@ -12,6 +12,9 @@
 $copyright = get_field('copyright', 'option');
 $facebook_link = get_field('facebook_link', 'option');
 $linkedin_link = get_field('linkedin_link', 'option');
+
+$privacy_link = get_field('privacy_link', 'option');
+
 ?>
 
 <footer>
@@ -45,10 +48,7 @@ $linkedin_link = get_field('linkedin_link', 'option');
         <div class="footer_menu">
             <ul>
                 <li>
-                    <a href="">Privacy Terms</a>
-                </li>
-                <li>
-                    <a href="">Terms & Conditions</a>
+                    <a href="<?php echo $privacy_link['url']?>"><?php echo $privacy_link['title']?></a>
                 </li>
             </ul>
         </div>
