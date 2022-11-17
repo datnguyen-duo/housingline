@@ -57,7 +57,7 @@ function housingline_scripts() {
 	wp_style_add_data( 'housingline-style', 'rtl', 'replace' );
 
 	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
-	wp_enqueue_script( 'global', get_template_directory_uri() . '/js/global.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'global', get_template_directory_uri() . '/js/global.min.js', array(), _S_VERSION, true );
 
 }
 add_action( 'wp_enqueue_scripts', 'housingline_scripts' );

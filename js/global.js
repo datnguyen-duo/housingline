@@ -124,13 +124,13 @@
             console.log(question);
 
             if(question){
-                if(question == "tenant"){
+                if(question == "tenants"){
                     setTimeout(function(){
                         $('.single_filter.tenant').trigger('click')  
                     }, 200)
                 }
 
-                if(question == 'developer'){
+                if(question == 'developers'){
                     setTimeout(function(){
                         $('.single_filter.developer').trigger('click')  
                     }, 200)
